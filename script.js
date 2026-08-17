@@ -98,11 +98,12 @@
     var wrap = document.querySelector(".js-admin-grid");
     if (!wrap) return;
     wrap.innerHTML = SITE_DATA.administration.map(function (a) {
+      var hasDesc = a.desc && ((a.desc.en && a.desc.en.trim()) || (a.desc.bn && a.desc.bn.trim()));
       return (
         '<div class="card admin-card">' +
         '<p class="role">' + bilingual(a.role) + "</p>" +
         '<p class="name">' + bilingual(a.name) + "</p>" +
-        '<p>' + bilingual(a.desc) + "</p>" +
+        (hasDesc ? '<p>' + bilingual(a.desc) + "</p>" : "") +
         "</div>"
       );
     }).join("");
