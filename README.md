@@ -9,7 +9,7 @@ hosted for free on **GitHub Pages**.
 
 ---
 
-## 1. What's in this project
+## 1. What's in this  project
 
 ```
 index.html         Home page (contains all main sections)
