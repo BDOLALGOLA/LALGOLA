@@ -70,39 +70,84 @@ const SITE_DATA = {
      ------------------------------------------------------------------ */
   administration: [
     {
-      role: { en: "Block Development Officer", bn: "ব্লক উন্নয়ন আধিকারিক (বিডিও)" },
-      name: { en: "Abhisek Biswas", bn: "শীঘ্রই আপডেট হবে" },
+      role: { en: "Block Development Officer (BDO)", bn: "ব্লক উন্নয়ন আধিকারিক (বিডিও)" },
+      name: "Abhisek Biswas",
       desc: { en: "Overall administrative head of the Development Block.", bn: "উন্নয়ন ব্লকের সামগ্রিক প্রশাসনিক প্রধান।" }
     },
     {
-      role: { en: "Joint BDO / Additional Officers", bn: "যুগ্ম বিডিও / অতিরিক্ত আধিকারিক" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
+      role: { en: "Joint BDO", bn: "যুগ্ম বিডিও" },
+      name: "Abhinandan Nayek",
       desc: { en: "Assists in the day-to-day administration of the block.", bn: "ব্লকের দৈনন্দিন প্রশাসনিক কাজে সহায়তা করেন।" }
     },
     {
-      role: { en: "Panchayat Development Section", bn: "পঞ্চায়েত উন্নয়ন শাখা" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
-      desc: { en: "Handles Gram Panchayat coordination and development monitoring.", bn: "গ্রাম পঞ্চায়েত সমন্বয় ও উন্নয়ন পর্যবেক্ষণের দায়িত্বে।" }
+      role: { en: "Joint BDO", bn: "যুগ্ম বিডিও" },
+      name: "Monishankar Biswas",
+      desc: { en: "Assists in the day-to-day administration of the block.", bn: "ব্লকের দৈনন্দিন প্রশাসনিক কাজে সহায়তা করেন।" }
     },
     {
-      role: { en: "Rural Development Section", bn: "গ্রামীণ উন্নয়ন শাখা" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
-      desc: { en: "Implements rural development schemes such as MGNREGA and PMAY-G.", bn: "মনরেগা ও পিএমএওয়াই-জি-র মতো গ্রামীণ উন্নয়ন প্রকল্প বাস্তবায়ন করে।" }
+      role: { en: "Head Clerk", bn: "হেড ক্লার্ক" },
+      name: "Ajay Swarnakar",
+      desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Social Welfare Section", bn: "সমাজকল্যাণ শাখা" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
-      desc: { en: "Manages pension, disability and other welfare schemes.", bn: "পেনশন, প্রতিবন্ধী ভাতা ও অন্যান্য কল্যাণমূলক প্রকল্প পরিচালনা করে।" }
+      role: { en: "BIO", bn: "বিআইও" },
+      name: "Subrata Biswas",
+      desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Election Section", bn: "নির্বাচন শাখা" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
-      desc: { en: "Coordinates electoral roll and election-related work at block level.", bn: "ব্লক স্তরে ভোটার তালিকা ও নির্বাচন সংক্রান্ত কাজের সমন্বয় করে।" }
+      role: { en: "PA & AO", bn: "পিএ ও এও" },
+      name: "Meghabrata Roy",
+      desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Other Important Sections", bn: "অন্যান্য গুরুত্বপূর্ণ শাখা" },
-      name: { en: "To be updated", bn: "শীঘ্রই আপডেট হবে" },
-      desc: { en: "Additional administrative sections will be listed here.", bn: "অতিরিক্ত প্রশাসনিক শাখাগুলি এখানে তালিকাভুক্ত করা হবে।" }
+      role: { en: "Inspector, BCW", bn: "ইন্সপেক্টর, বিসিডব্লিউ" },
+      name: "Swagata Bose",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "Deputy Secretary", bn: "ডেপুটি সেক্রেটারি" },
+      name: "Sadhin Goswami",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "Junior Engineer (P&RD)", bn: "জুনিয়র ইঞ্জিনিয়ার (পি অ্যান্ড আরডি)" },
+      name: "Nasrat Ali",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "Junior Engineer (RWS)", bn: "জুনিয়র ইঞ্জিনিয়ার (আরডব্লিউএস)" },
+      name: "Biswajit Singha",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "Junior Engineer (Civil)", bn: "জুনিয়র ইঞ্জিনিয়ার (সিভিল)" },
+      name: "Ananta Saha",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "Junior Engineer (BPC)", bn: "জুনিয়র ইঞ্জিনিয়ার (বিপিসি)" },
+      name: "Mukunda Karmakar",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "WDO", bn: "ডব্লিউডিও" },
+      name: "Sima Das",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "IMW", bn: "আইএমডব্লিউ" },
+      name: "Amit Pramanik",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "BYO", bn: "বিওয়াইও" },
+      name: "Shayan Mahalanobis",
+      desc: { en: "", bn: "" }
+    },
+    {
+      role: { en: "SEO", bn: "এসইও" },
+      name: "Sahana Khatun",
+      desc: { en: "", bn: "" }
     }
   ],
 
@@ -229,9 +274,9 @@ const SITE_DATA = {
      11. CONTACT INFORMATION
      ------------------------------------------------------------------ */
   contact: {
-    address: { en: "Office of the Block Development Officer, Lalgola Development Block, Murshidabad, West Bengal – PIN: To be updated", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়, লালগোলা উন্নয়ন ব্লক, মুর্শিদাবাদ, পশ্চিমবঙ্গ – পিন: শীঘ্রই আপডেট হবে" },
-    phone: "To be updated",
-    email: "To be updated",
+    address: { en: "Office of the Block Development Officer, Lalgola Development Block, Murshidabad, West Bengal – PIN: 742148", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়, লালগোলা উন্নয়ন ব্লক, মুর্শিদাবাদ, পশ্চিমবঙ্গ – পিন: ৭৪২১৪৮" },
+    phone: "9434770044",
+    email: "lalgolabdo@gmail.com",
     officeHours: { en: "Monday – Friday, 10:00 AM – 5:00 PM (To be confirmed)", bn: "সোমবার – শুক্রবার, সকাল ১০:০০ – বিকেল ৫:০০ (নিশ্চিত করা হবে)" },
     mapEmbedUrl: ""
   }
