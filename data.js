@@ -156,6 +156,8 @@ const SITE_DATA = {
      To add a new notice, copy one block below (between { and },),
      paste it, and edit the fields. pdf: "" means no PDF uploaded yet —
      put the file inside the /documents folder and write its filename.
+     image: "" is optional — put a photo inside assets/gallery/ and
+     write its filename to show a thumbnail with the notice.
      ------------------------------------------------------------------ */
   notices: [
     {
@@ -167,7 +169,8 @@ const SITE_DATA = {
         en: "This is a placeholder notice. Replace this text and the details above with an actual notice issued by the block office.",
         bn: "এটি একটি নমুনা বিজ্ঞপ্তি। এই লেখাটি এবং উপরের বিবরণ ব্লক কার্যালয় থেকে জারি করা প্রকৃত বিজ্ঞপ্তি দিয়ে প্রতিস্থাপন করুন।"
       },
-      pdf: ""
+      pdf: "",
+      image: ""
     },
     {
       id: "N002",
@@ -178,7 +181,8 @@ const SITE_DATA = {
         en: "This is a placeholder notice. Replace with real information once available.",
         bn: "এটি একটি নমুনা বিজ্ঞপ্তি। প্রকৃত তথ্য পাওয়া গেলে তা প্রতিস্থাপন করুন।"
       },
-      pdf: ""
+      pdf: "",
+      image: ""
     },
     {
       id: "N003",
@@ -189,7 +193,8 @@ const SITE_DATA = {
         en: "This is a placeholder notice for demonstration of the notice board layout and search feature.",
         bn: "এটি নোটিশ বোর্ডের বিন্যাস এবং অনুসন্ধান বৈশিষ্ট্যের প্রদর্শনের জন্য একটি নমুনা বিজ্ঞপ্তি।"
       },
-      pdf: ""
+      pdf: "",
+      image: ""
     }
   ],
 
@@ -279,5 +284,44 @@ const SITE_DATA = {
     email: "lalgolabdo@gmail.com",
     officeHours: { en: "Monday – Friday, 10:00 AM – 5:00 PM (To be confirmed)", bn: "সোমবার – শুক্রবার, সকাল ১০:০০ – বিকেল ৫:০০ (নিশ্চিত করা হবে)" },
     mapEmbedUrl: ""
+  },
+
+  /* ------------------------------------------------------------------
+     12. PHOTO GALLERY
+     To add a photo: place the image file inside assets/gallery/ and
+     add a new entry below with its filename and a caption.
+     ------------------------------------------------------------------ */
+  gallery: [
+    { image: "", caption: { en: "Sample Photo — Block Office Building", bn: "নমুনা ছবি — ব্লক কার্যালয় ভবন" } },
+    { image: "", caption: { en: "Sample Photo — Public Event", bn: "নমুনা ছবি — জনসাধারণের অনুষ্ঠান" } },
+    { image: "", caption: { en: "Sample Photo — Development Work", bn: "নমুনা ছবি — উন্নয়নমূলক কাজ" } },
+    { image: "", caption: { en: "Sample Photo — Distribution Camp", bn: "নমুনা ছবি — বিতরণ শিবির" } }
+  ],
+
+  /* ------------------------------------------------------------------
+     13. CITIZEN SERVICES — QUICK EXTERNAL LINKS (sidebar)
+     These are direct links to official West Bengal / Government of
+     India portals that citizens commonly need.
+     ------------------------------------------------------------------ */
+  quickServiceLinks: [
+    { name: { en: "Aadhaar Card Download", bn: "আধার কার্ড ডাউনলোড" }, url: "https://myaadhaar.uidai.gov.in/" },
+    { name: { en: "Banglarbhumi (Land Records)", bn: "বাংলার ভূমি" }, url: "https://banglarbhumi.gov.in" },
+    { name: { en: "e-District (Income/Domicile Certificate)", bn: "ই-ডিস্ট্রিক্ট (সার্টিফিকেট)" }, url: "https://edistrict.wb.gov.in" },
+    { name: { en: "Digital Ration Card Download", bn: "ডিজিটাল রেশন কার্ড" }, url: "https://wbpds.wb.gov.in" },
+    { name: { en: "Caste Certificate Download", bn: "জাতি শংসাপত্র ডাউনলোড" }, url: "https://castcertificatewb.gov.in" },
+    { name: { en: "Voter List / eEPIC Download", bn: "ভোটার তালিকা / ইপিক ডাউনলোড" }, url: "https://www.nvsp.in/" },
+    { name: { en: "Bangla Sahayata Kendra", bn: "বাংলা সহায়তা কেন্দ্র" }, url: "https://bsk.wb.gov.in/" },
+    { name: { en: "Krishak Bandhu", bn: "কৃষক বন্ধু" }, url: "https://krishakbandhu.net/" },
+    { name: { en: "PM Kisan Samman Nidhi", bn: "পিএম কিষাণ সম্মান নিধি" }, url: "https://pmkisan.gov.in/" },
+    { name: { en: "Swasthya Sathi Card Search", bn: "স্বাস্থ্য সাথী কার্ড অনুসন্ধান" }, url: "https://data.swasthyasathi.gov.in" }
+  ],
+
+  /* ------------------------------------------------------------------
+     14. SOCIAL MEDIA LINKS — leave "" if the office has no page yet
+     ------------------------------------------------------------------ */
+  socialLinks: {
+    facebook: "",
+    twitter: "",
+    youtube: ""
   }
 };
