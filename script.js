@@ -191,6 +191,68 @@
     }
   }
 
+  /* ---------------- render: photo gallery ---------------- */
+  function renderGallery() {
+    var wrap = document.querySelector(".js-gallery-grid");
+    if (!wrap) return;
+    var withPhotos = SITE_DATA.gallery.filter(function (g) { return g.image; });
+
+    if (withPhotos.length === 0) {
+      wrap.innerHTML =
+        '<div class="empty-state">' +
+        '<span class="lang-en">No photos have been added yet. Add image files to assets/gallery/ and list them in data.js to display them here.</span>' +
+        '<span class="lang-bn">এখনও কোনো ছবি যোগ করা হয়নি। assets/gallery/ ফোল্ডারে ছবি যুক্ত করে data.js-এ তালিকাভুক্ত করলে এখানে প্রদর্শিত হবে।</span>' +
+        "</div>";
+      return;
+    }
+
+    wrap.innerHTML = withPhotos.map(function (g) {
+      return (
+        '<figure class="gallery-item">' +
+        '<img src="assets/gallery/' + encodeURIComponent(g.image) + '" alt="' + escapeHtml((g.caption && g.caption.en) || "") + '" loading="lazy" />' +
+        '<figcaption>' + bilingual(g.caption) + "</figcaption>" +
+        "</figure>"
+      );
+    }).join("");
+  }
+
+  /* ---------------- render: sidebar quick service links ---------------- */
+  function renderQuickServiceLinks() {
+    var wrap = document.querySelector(".js-quick-service-links");
+    if (!wrap) return;
+    wrap.innerHTML = SITE_DATA.quickServiceLinks.map(function (l) {
+      return (
+        '<li><a href="' + escapeHtml(l.url) + '" target="_blank" rel="noopener noreferrer">' +
+        bilingual(l.name) +
+        "</a></li>"
+      );
+    }).join("");
+  }
+
+  /* ---------------- render: social links ---------------- */
+  function renderSocialLinks() {
+    var wraps = document.querySelectorAll(".js-social-links");
+    if (!wraps.length) return;
+    var s = SITE_DATA.socialLinks || {};
+    var icons = [
+      { key: "facebook", label: "Facebook", icon: "📘" },
+      { key: "twitter", label: "Twitter / X", icon: "🐦" },
+      { key: "youtube", label: "YouTube", icon: "▶️" }
+    ];
+    var active = icons.filter(function (i) { return s[i.key]; });
+    var html;
+    if (active.length === 0) {
+      html =
+        '<span class="lang-en">Social media pages will be linked here once available.</span>' +
+        '<span class="lang-bn">সোশ্যাল মিডিয়া পেজ পাওয়া গেলে এখানে যুক্ত করা হবে।</span>';
+    } else {
+      html = active.map(function (i) {
+        return '<a href="' + escapeHtml(s[i.key]) + '" target="_blank" rel="noopener noreferrer" aria-label="' + i.label + '">' + i.icon + "</a>";
+      }).join("");
+    }
+    wraps.forEach(function (wrap) { wrap.innerHTML = html; });
+  }
+
   /* ---------------- render: marquee ---------------- */
   function renderMarquee() {
     var track = document.querySelector(".js-marquee-content");
@@ -251,8 +313,12 @@
       var pdfBtn = n.pdf
         ? '<a class="btn btn-primary" href="documents/' + encodeURIComponent(n.pdf) + '" download><span class="lang-en">Download PDF</span><span class="lang-bn">পিডিএফ ডাউনলোড</span></a>'
         : '<button class="btn btn-primary" disabled><span class="lang-en">PDF Not Available</span><span class="lang-bn">পিডিএফ উপলব্ধ নেই</span></button>';
+      var thumb = n.image
+        ? '<img class="notice-thumb" src="assets/gallery/' + encodeURIComponent(n.image) + '" alt="" loading="lazy" />'
+        : "";
       return (
         '<article class="notice-item">' +
+        thumb +
         '<div class="notice-main">' +
         "<h3>" + bilingual(n.title) + "</h3>" +
         '<div class="notice-meta">' +
@@ -351,6 +417,9 @@
     renderDocuments();
     renderLinks();
     renderContact();
+    renderGallery();
+    renderQuickServiceLinks();
+    renderSocialLinks();
     renderMarquee();
     populateDeptFilter();
     renderNotices();
