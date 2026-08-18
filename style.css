@@ -402,6 +402,114 @@ body[data-lang="bn"] .lang-en { display: none !important; }
 }
 
 /* --------------------------------------------------------------------
+   HOME PAGE LAYOUT (main + sidebar)
+   -------------------------------------------------------------------- */
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  align-items: start;
+  margin-top: -34px;
+  position: relative;
+  z-index: 2;
+}
+.home-main .stats-grid { margin-top: 0; }
+.home-sidebar {
+  display: grid;
+  gap: 16px;
+}
+.sidebar-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+}
+.sidebar-card h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--blue-800);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 8px;
+}
+.sidebar-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.sidebar-link-list li { border-bottom: 1px solid var(--border); }
+.sidebar-link-list li:last-child { border-bottom: none; }
+.sidebar-link-list a {
+  display: block;
+  padding: 9px 2px;
+  font-size: 13.5px;
+  color: var(--blue-700);
+}
+.sidebar-link-list a:hover { color: var(--blue-900); text-decoration: none; background: var(--blue-50); }
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--blue-100);
+  font-size: 16px;
+  text-decoration: none;
+}
+.social-links a:hover { background: var(--gold); }
+.footer-social {
+  margin-top: 14px;
+}
+.footer-social a {
+  background: rgba(255,255,255,0.14);
+  color: var(--white);
+}
+.footer-social a:hover { background: var(--gold); }
+
+@media (max-width: 950px) {
+  .home-layout { grid-template-columns: 1fr; margin-top: 24px; }
+}
+
+/* --------------------------------------------------------------------
+   PHOTO GALLERY
+   -------------------------------------------------------------------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.gallery-item {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--blue-50);
+}
+.gallery-item figcaption {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* --------------------------------------------------------------------
    CARD GRIDS (general)
    -------------------------------------------------------------------- */
 .card-grid {
@@ -494,6 +602,14 @@ body[data-lang="bn"] .lang-en { display: none !important; }
   align-items: flex-start;
 }
 .notice-main { flex: 1 1 320px; }
+.notice-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 0 0 auto;
+  background: var(--blue-50);
+}
 .notice-main h3 { margin: 0 0 6px; font-size: 16px; color: var(--blue-800); }
 .notice-meta {
   font-size: 12.5px;
