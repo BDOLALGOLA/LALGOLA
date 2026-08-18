@@ -280,7 +280,7 @@ const SITE_DATA = {
      ------------------------------------------------------------------ */
   contact: {
     address: { en: "Office of the Block Development Officer, Lalgola Development Block, Murshidabad, West Bengal – PIN: 742148", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়, লালগোলা উন্নয়ন ব্লক, মুর্শিদাবাদ, পশ্চিমবঙ্গ – পিন: ৭৪২১৪৮" },
-    phone: "9434770044",
+    phone: "+913483274118",
     email: "lalgolabdo@gmail.com",
     officeHours: { en: "Monday – Friday, 10:00 AM – 5:00 PM (To be confirmed)", bn: "সোমবার – শুক্রবার, সকাল ১০:০০ – বিকেল ৫:০০ (নিশ্চিত করা হবে)" },
     mapEmbedUrl: ""
