@@ -280,7 +280,7 @@ const SITE_DATA = {
      ------------------------------------------------------------------ */
   contact: {
     address: { en: "Office of the Block Development Officer, Lalgola Development Block, Murshidabad, West Bengal – PIN: 742148", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়, লালগোলা উন্নয়ন ব্লক, মুর্শিদাবাদ, পশ্চিমবঙ্গ – পিন: ৭৪২১৪৮" },
-    phone: "+913483274118",
+    phone: "9434770044",
     email: "lalgolabdo@gmail.com",
     officeHours: { en: "Monday – Friday, 10:00 AM – 5:00 PM (To be confirmed)", bn: "সোমবার – শুক্রবার, সকাল ১০:০০ – বিকেল ৫:০০ (নিশ্চিত করা হবে)" },
     mapEmbedUrl: ""
@@ -292,10 +292,8 @@ const SITE_DATA = {
      add a new entry below with its filename and a caption.
      ------------------------------------------------------------------ */
   gallery: [
-    { image: "", caption: { en: "Sample Photo — Block Office Building", bn: "নমুনা ছবি — ব্লক কার্যালয় ভবন" } },
-    { image: "", caption: { en: "Sample Photo — Public Event", bn: "নমুনা ছবি — জনসাধারণের অনুষ্ঠান" } },
-    { image: "", caption: { en: "Sample Photo — Development Work", bn: "নমুনা ছবি — উন্নয়নমূলক কাজ" } },
-    { image: "", caption: { en: "Sample Photo — Distribution Camp", bn: "নমুনা ছবি — বিতরণ শিবির" } }
+    { image: "BDO.png", caption: { en: "Block Development Officer, Lalgola", bn: "ব্লক উন্নয়ন আধিকারিক, লালগোলা" } },
+    { image: "Lalgola Bdo.webp", caption: { en: "Office of the BDO, Lalgola", bn: "বিডিও কার্যালয়, লালগোলা" } }
   ],
 
   /* ------------------------------------------------------------------
