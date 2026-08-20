@@ -22,7 +22,7 @@ const SITE_DATA = {
     officeTitle: { en: "Office of the Block Development Officer", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়" },
     district: { en: "Murshidabad, West Bengal", bn: "মুর্শিদাবাদ, পশ্চিমবঙ্গ" },
     lastUpdated: "17 August 2026",
-    helpline: "9434770044"
+    helpline: "+91 3483274118"
   },
 
   /* ------------------------------------------------------------------
