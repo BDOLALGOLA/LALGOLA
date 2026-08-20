@@ -3,7 +3,7 @@
    Reads content from data.js (SITE_DATA) and renders it into the page.
    Handles: language switch, mobile menu, notice search/filter.
    ========================================================================== */
-
+ 
 (function () {
   "use strict";
 
