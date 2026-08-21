@@ -22,7 +22,7 @@ const SITE_DATA = {
     officeTitle: { en: "Office of the Block Development Officer", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়" },
     district: { en: "Murshidabad, West Bengal", bn: "মুর্শিদাবাদ, পশ্চিমবঙ্গ" },
     lastUpdated: "17 August 2026",
-    helpline: "+91 3483274118"
+    helpline: "9434770044"
   },
 
   /* ------------------------------------------------------------------
@@ -92,13 +92,13 @@ const SITE_DATA = {
       desc: { en: "Overall administrative head of the Development Block.", bn: "উন্নয়ন ব্লকের সামগ্রিক প্রশাসনিক প্রধান।" }
     },
     {
-      role: { en: "Joint BDO", bn: "যুগ্ম বিডিও" },
+      role: { en: "Joint Block Development Officer (Jt.-BDO)", bn: "যুগ্ম ব্লক উন্নয়ন আধিকারিক" },
       name: "Abhinandan Nayek",
       desc: { en: "Assists in the day-to-day administration of the block.", bn: "ব্লকের দৈনন্দিন প্রশাসনিক কাজে সহায়তা করেন।" }
     },
     {
-      role: { en: "Joint BDO", bn: "যুগ্ম বিডিও" },
-      name: "Manisankar Biswas",
+      role: { en: "Joint Block Development Officer (Jt.-BDO)", bn: "যুগ্ম ব্লক উন্নয়ন আধিকারিক" },
+      name: "Monishankar Biswas",
       desc: { en: "Assists in the day-to-day administration of the block.", bn: "ব্লকের দৈনন্দিন প্রশাসনিক কাজে সহায়তা করেন।" }
     },
     {
@@ -107,37 +107,37 @@ const SITE_DATA = {
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "BIO", bn: "বিআইও" },
+      role: { en: "Block Informatics Officer (BIO)", bn: "ব্লক ইনফরমেটিক্স আধিকারিক (বিআইও)" },
       name: "Subrata Biswas",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "PA & AO", bn: "পিএ ও এও" },
+      role: { en: "Panchayat Accounts and Audit Officer (PA & AO)", bn: "পঞ্চায়েত অ্যাকাউন্টস অ্যান্ড অডিট অফিসার" },
       name: "Meghabrata Roy",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Inspector, BCW", bn: "ইন্সপেক্টর, বিসিডব্লিউ" },
+      role: { en: "Inspector of Backward Classes Welfare (IBCW)", bn: "ইন্সপেক্টর, ব্যাকওয়ার্ড ক্লাসেস ওয়েলফেয়ার" },
       name: "Swagata Bose",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Deputy Secretary", bn: "ডেপুটি সেক্রেটারি" },
+      role: { en: "Deputy Secretary (DSPS)", bn: "ডেপুটি সেক্রেটারি" },
       name: "Sadhin Goswami",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Junior Engineer (P&RD)", bn: "জুনিয়র ইঞ্জিনিয়ার (পি অ্যান্ড আরডি)" },
+      role: { en: "Junior Engineer (Panchayat & Rural Development)", bn: "জুনিয়র ইঞ্জিনিয়ার (পঞ্চায়েত ও গ্রামোন্নয়ন)" },
       name: "Nasrat Ali",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Junior Engineer (RWS)", bn: "জুনিয়র ইঞ্জিনিয়ার (আরডব্লিউএস)" },
+      role: { en: "Junior Engineer (Rural Water Supply)", bn: "জুনিয়র ইঞ্জিনিয়ার (গ্রামীণ জল সরবরাহ)" },
       name: "Biswajit Singha",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "Junior Engineer (Civil)", bn: "জুনিয়র ইঞ্জিনিয়ার (সিভিল)" },
+      role: { en: "Junior Engineer ", bn: "জুনিয়র ইঞ্জিনিয়ার " },
       name: "Ananta Saha",
       desc: { en: "", bn: "" }
     },
@@ -147,22 +147,22 @@ const SITE_DATA = {
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "WDO", bn: "ডব্লিউডিও" },
+      role: { en: "Women Development Officer (WDO)", bn: "মহিলা উন্নয়ন আধিকারিক" },
       name: "Sima Das",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "IMW", bn: "আইএমডব্লিউ" },
+      role: { en: "Inspector of Minimum Wages (IMW)", bn: "ইন্সপেক্টর অফ মিনিমাম ওয়েজেস" },
       name: "Amit Pramanik",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "BYO", bn: "বিওয়াইও" },
+      role: { en: "Block Youth Officer (BYO)", bn: "ব্লক যুব আধিকারিক" },
       name: "Shayan Mahalanobis",
       desc: { en: "", bn: "" }
     },
     {
-      role: { en: "SEO", bn: "এসইও" },
+      role: { en: "Samity Education Officer (SEO) ", bn: "সমিতি শিক্ষা আধিকারিক" },
       name: "Sahana Khatun",
       desc: { en: "", bn: "" }
     }
@@ -297,10 +297,10 @@ const SITE_DATA = {
      ------------------------------------------------------------------ */
   contact: {
     address: { en: "Office of the Block Development Officer, Lalgola Development Block, Murshidabad, West Bengal – PIN: 742148", bn: "ব্লক উন্নয়ন আধিকারিকের কার্যালয়, লালগোলা উন্নয়ন ব্লক, মুর্শিদাবাদ, পশ্চিমবঙ্গ – পিন: ৭৪২১৪৮" },
-    phone: "",
+    phone: "+91 3483274118",
     email: "lalgolabdo@gmail.com",
     officeHours: { en: "Monday – Friday, 10:00 AM – 5:00 PM (To be confirmed)", bn: "সোমবার – শুক্রবার, সকাল ১০:০০ – বিকেল ৫:০০ (নিশ্চিত করা হবে)" },
-    mapEmbedUrl: "+91 3483274118"
+    mapEmbedUrl: ""
   },
 
   /* ------------------------------------------------------------------
