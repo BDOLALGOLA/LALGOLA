@@ -1,4 +1,9 @@
 User-agent: *
-Allow: / 
+Disallow: /
 
-Sitemap: https://bdolalgola.github.io/LALGOLA/sitemap.xml
+# The website is temporarily hidden from search engines while content
+# is being finalized. Remove the "Disallow: /" line above and restore
+# "Allow: /" plus the sitemap line below when ready to publish.
+#
+# Allow: /
+# Sitemap: https://bdolalgola.github.io/LALGOLA/sitemap.xml
