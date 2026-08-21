@@ -70,14 +70,10 @@ const SITE_DATA = {
     heading: { en: "About Lalgola Development Block", bn: "লালগোলা উন্নয়ন ব্লক সম্পর্কে" },
     body: {
       en: [
-        "Lalgola Development Block is one of the administrative blocks in Murshidabad district, West Bengal, functioning under the overall supervision of the Office of the Block Development Officer (BDO).",
-        "The block office coordinates rural development, panchayat administration, social welfare schemes, and public services for the citizens residing within the block, working in close association with the Gram Panchayats and Panchayat Samiti.",
-        "This website is intended to serve as an official information point for residents, providing details about notices, government schemes, citizen services, and important contacts. Content on this page is being progressively updated — please check back for the latest information."
+        "Welcome to the official web portal of the Lalgola Block Development Officer (BDO) and Panchayat Samiti. The Lalgola Development Block is one of the administrative blocks in the Murshidabad district of West Bengal. Our primary objective is to deliver all government services of the block administration to the doorsteps of the common people with transparency, accountability, and speed. The Lalgola Block administration is committed to the socio-economic development of the marginalized and the overall growth of the rural economy."
       ],
       bn: [
-        "লালগোলা উন্নয়ন ব্লক পশ্চিমবঙ্গের মুর্শিদাবাদ জেলার একটি প্রশাসনিক ব্লক, যা ব্লক উন্নয়ন আধিকারিকের (বিডিও) কার্যালয়ের সামগ্রিক তত্ত্বাবধানে পরিচালিত হয়।",
-        "ব্লক কার্যালয় গ্রাম পঞ্চায়েত ও পঞ্চায়েত সমিতির সাথে ঘনিষ্ঠভাবে কাজ করে ব্লকের মধ্যে বসবাসকারী নাগরিকদের জন্য গ্রামীণ উন্নয়ন, পঞ্চায়েত প্রশাসন, সামাজিক কল্যাণ প্রকল্প এবং জনপরিষেবার সমন্বয় সাধন করে।",
-        "এই ওয়েবসাইটটি বাসিন্দাদের জন্য একটি অফিসিয়াল তথ্যকেন্দ্র হিসেবে কাজ করার উদ্দেশ্যে তৈরি, যেখানে বিজ্ঞপ্তি, সরকারি প্রকল্প, নাগরিক পরিষেবা এবং গুরুত্বপূর্ণ যোগাযোগের বিবরণ দেওয়া থাকবে। এই পাতার তথ্য ধীরে ধীরে আপডেট করা হচ্ছে — সর্বশেষ তথ্যের জন্য অনুগ্রহ করে পুনরায় দেখুন।"
+        "লালগোলা সমষ্টি উন্নয়ন আধিকারিক (বিডিও) এবং পঞ্চায়েত সমিতির অফিসিয়াল ওয়েব পোর্টালে আপনাকে স্বাগত। লালগোলা সমষ্টি উন্নয়ন ব্লক হলো পশ্চিমবঙ্গের মুর্শিদাবাদ জেলার অন্যতম একটি প্রশাসনিক ব্লক। আমাদের প্রাথমিক লক্ষ্য হলো স্বচ্ছতা, দায়বদ্ধতা এবং দ্রুততার সাথে ব্লক প্রশাসনের সমস্ত সরকারি পরিষেবা সাধারণ মানুষের দোরগোড়ায় পৌঁছে দেওয়া। প্রান্তিক মানুষের আর্থ-সামাজিক উন্নয়ন এবং গ্রামীণ অর্থনীতির সার্বিক বিকাশের লক্ষ্যে লালগোলা ব্লক প্রশাসন বদ্ধপরিকর।"
       ]
     }
   },
