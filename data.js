@@ -98,7 +98,7 @@ const SITE_DATA = {
     },
     {
       role: { en: "Joint BDO", bn: "যুগ্ম বিডিও" },
-      name: "Monishankar Biswas",
+      name: "Manisankar Biswas",
       desc: { en: "Assists in the day-to-day administration of the block.", bn: "ব্লকের দৈনন্দিন প্রশাসনিক কাজে সহায়তা করেন।" }
     },
     {
